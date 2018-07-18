@@ -1,0 +1,269 @@
+*{
+  margin:0;
+  padding:0;
+  list-style:none;
+  text-decoration: none;
+}
+body,html,#root,.App,.index,.money,.user{
+  width: 100%;
+  height:100%;
+  overflow: hidden;
+}
+.money{
+  display: flex;
+  flex-direction: column;
+}
+.money header{
+  width: 100%;
+  height: 40px;
+  background: #ccc;
+}
+.money main{
+  flex: 1;
+  background: #e5e5e5;
+}
+.money footer{
+  width: 100%;
+  height: 50px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+}
+.money footer a{
+  width:25%;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  color: #666;
+  font-size: 16px;
+}
+.money footer a span{
+  display: block;
+}
+.money footer a.active{
+  color:#32cd32;
+}
+/* 首页 */
+.home .am-list-item{
+  background: #337ab7;
+  border-radius: 5px;
+  padding:4px 0;
+  
+}
+.home .move{
+  width: 100%;
+  line-height: 70px;
+  height: 70px;
+  position: relative;
+}
+.home .move .home-money{
+  width: 100%;
+  font-size: 14px;
+  color: #8f8f94;
+  position: absolute;
+  left:0;
+  animation: move 6s linear infinite;
+}
+@keyframes move{
+  0%{
+    left:-100%;
+  }
+  100%{
+    left:100%;
+  }
+}
+.home .am-list-body .am-list-item{
+  background: #fff;
+  padding:4px 10px;
+}
+.home .am-list-item .am-list-line .am-list-content{
+  color: #8f8f94;
+  font-size: 14px;
+}
+.home .am-list-item .am-list-line .am-list-extra{
+  color: #8a6de9;
+  font-size: 22px;
+  font-weight: 700;
+}
+.home .home-top{
+  margin:10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .home-top span{
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  font-size: 42px;
+  text-align: center;
+}
+.home .home-top p{
+  margin-top: 10px;
+  color: #8f8f94;
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.home .boxTab{
+  width:100%;
+  height: 50px;
+  background: #337ab7;
+  text-align: center;
+  line-height: 50px;
+  color:#fff;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* 提交 */
+.submi .am-list-item{
+  padding: 15px 0 0 20px;
+  background:#e5e5e5 ;
+}
+.submi .am-list-line{
+  border-bottom: solid 1px #ccc;
+}
+.submi .am-list-item .am-list-line .am-list-content{
+    font-weight: 600;
+    font-size: 16px;
+}
+.submi .am-list-item .am-input-label{
+  font-weight: 600;
+    font-size: 16px;
+    padding-left:5px;
+}
+.submi .am-list-item .am-input-control input::-webkit-input-placeholder{
+  text-align: right;
+  color:#888;
+  font-size: 16px;
+}
+.submi .submi-btns{
+  text-align: center;
+  margin-top:30px;
+  border-bottom: solid 1px #ccc;
+}
+.submi .am-button-primary{
+  font-weight: 600;
+  font-size: 14px;
+}
+.submi .am-button-warning{
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* 详情 */
+.detail .detail-xuan{
+  margin: 0 0 15px;
+  padding: 20px 15px;
+  background: #eee;
+  font-size: 16px;
+}
+
+.detail .detail-xuan .detail-list p{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  background: #eee;
+}
+.detail .detail-xuan .detail-list .list-one p{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  font-size: 18px;
+}
+/* 用户管理 */
+.user{
+  display: flex;
+  flex-direction: column;
+}
+.user header{
+  width: 100%;
+  height: 40px;
+  background: #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding:0 10px;
+}
+.user header p{
+  font-size: 17px;
+}
+.user main{
+  flex: 1;
+  background: #e5e5e5;
+}
+.user main .user-list {
+  padding: 11px 15px;
+  background: #fff;
+}
+.user main .user-list .user-cont{
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding:6px 14px;
+}
+.user main .user-list .user-cont .qianbi{
+  font-size: 24px;
+}
+
+/* 结算 */
+
+.computed .computed-allNum{
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background: #eee;
+  text-align: center;
+}
+.computed .computed-allNum span{
+  width: 50%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  background: #ccc;
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+}
+.computed .computed-table{
+  padding:30px 0;
+
+}
+.computed .computed-table .table-top{
+  width: 100%;
+  display: flex;
+  padding:10px 0;
+  background: #d9edf7;
+  border-bottom: solid 1px #ccc;
+}
+.computed .computed-table .table-top span{
+  width: 20%;
+  text-align: center;
+  display: inline-block;
+}
+.computed .computed-table .table-bot{
+  width: 100%;
+  display: flex;
+  padding:10px 0;
+  border-bottom: solid 1px #ccc;
+}
+.computed .computed-table .table-bot span{
+  width: 20%;
+  text-align: center;
+  display: inline-block;
+}
+
+
+
+
